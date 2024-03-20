@@ -5,19 +5,16 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="Search-input">
-          <form>
-            <input
-              type="Search"
-              placeholder="Enter a city..."
-              className="searchCity"
-            />
-            <input type="Submit" value="Search" className="btns" />
-            <input type="Submit" value="Current" className="btns" />
-          </form>
-        </div>
-      </header>
+      <form>
+        <input
+          type="Search"
+          placeholder="Enter a city..."
+          className="searchCity"
+        />
+        <input type="Submit" value="Search" className="btns" />
+        <input type="Submit" value="Current" className="btns" />
+      </form>
+
       <main>
         <div className="WeatherInformation">
           <h1>Empangeni</h1>
