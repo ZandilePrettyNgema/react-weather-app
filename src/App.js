@@ -1,6 +1,7 @@
 import "./App.css";
 import WeatherConditions from "./WeatherConditions";
 import WeatherForecast from "./WeatherForecast";
+import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
       </main>
       <WeatherConditions />
       <WeatherForecast />
+      <Footer />
     </div>
   );
 }
