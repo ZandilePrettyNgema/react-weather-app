@@ -14,7 +14,9 @@ export default function WeatherConditions() {
             animate={true}
           />
         </div>
-        <h1 className="Temperature">26°C</h1>
+        <h1 className="Temperature">
+          26<small className="DegreeSymbol">°C</small>
+        </h1>
       </div>
       <div className="WeatherConditionsData">
         <span>Precipitation: 75%</span> <br />

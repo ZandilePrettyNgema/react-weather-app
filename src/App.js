@@ -18,7 +18,7 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="WeatherData">
+        <div className="WeatherInformation">
           <h1>Empangeni</h1>
           <span>Tuesday 1:20</span>
           <h2>Clear</h2>
