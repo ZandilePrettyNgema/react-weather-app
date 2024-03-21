@@ -5,7 +5,7 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
-      <div className="container">
+   
         <form>
           <input
             type="Search"
@@ -13,20 +13,16 @@ function App() {
             className="searchCity"
           />
           <input type="Submit" value="Search" className="btns" />
-          <input type="Submit" value="Current" className="btns" />
         </form>
-
-        <main>
           <div className="WeatherInformation">
             <h1>Empangeni</h1>
             <span>Tuesday 1:20</span>
             <h2>Clear</h2>
           </div>
-        </main>
         <WeatherConditions />
         <WeatherForecast />
         <Footer />
-      </div>
+      
     </div>
   );
 }
