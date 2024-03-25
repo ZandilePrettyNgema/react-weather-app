@@ -19,7 +19,7 @@ export default function WeatherConditions() {
         </h1>
       </div>
       <div className="WeatherConditionsData">
-        <span>Precipitation: 75%</span> <br />
+        <span>Humidity: 75%</span> <br />
         <span>Wind: 2km/h</span>
       </div>
     </div>
