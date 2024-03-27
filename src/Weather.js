@@ -3,10 +3,13 @@ import "./App.css";
 import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
+
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ dataReady: false });
   const [city, setCity] = useState(props.city);
+
   function handleResponse(response) {
     setWeatherData({
       dataReady: true,
@@ -14,6 +17,7 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       city: response.data.name,
     });
@@ -57,12 +61,7 @@ export default function Weather(props) {
         <div className="WeatherConditionsCurrently">
           <div className="WeatherConditions">
             <div className="WeatherIcon">
-              <ReactAnimatedWeather
-                icon="CLEAR_NIGHT"
-                color="#000"
-                size={40}
-                animate={true}
-              />
+              <WeatherIcon code={weatherData.icon} size={52} />
             </div>
             <h1 className="Temperature">
               {Math.round(weatherData.temperature)}
