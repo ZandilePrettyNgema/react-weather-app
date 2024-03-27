@@ -4,7 +4,7 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <Weather city="Durban" />
+      <Weather city="Empangeni" />
       <Footer />
     </div>
   );
