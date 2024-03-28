@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
@@ -72,7 +71,6 @@ export default function Weather(props) {
             <span>Wind: {weatherData.wind}km/h</span>
           </div>
         </div>
-       
       </div>
     );
   } else {
