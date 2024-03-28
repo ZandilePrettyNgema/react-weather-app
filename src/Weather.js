@@ -4,7 +4,7 @@ import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
-
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ dataReady: false });
@@ -63,10 +63,7 @@ export default function Weather(props) {
             <div className="WeatherIcon">
               <WeatherIcon code={weatherData.icon} size={52} />
             </div>
-            <h1 className="Temperature">
-              {Math.round(weatherData.temperature)}
-              <small className="DegreeSymbol">°C</small>
-            </h1>
+            <WeatherTemperature celsius={weatherData.temperature} />
           </div>
           <div className="WeatherConditionsData">
             <span>Humidity: {weatherData.humidity}%</span> <br />
