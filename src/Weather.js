@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ dataReady: false });
@@ -59,7 +60,7 @@ export default function Weather(props) {
         <div className="WeatherConditionsCurrently">
           <div className="WeatherConditions">
             <div className="WeatherIcon">
-              <WeatherIcon code={weatherData.icon} size={52} />
+              <WeatherIcon code={weatherData.icon} size={50} />
             </div>
             <h1 className="Temperature">
               {Math.round(weatherData.temperature)}
@@ -71,6 +72,7 @@ export default function Weather(props) {
             <span>Wind: {weatherData.wind}km/h</span>
           </div>
         </div>
+        <WeatherForecast />
       </div>
     );
   } else {

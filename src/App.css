@@ -70,6 +70,14 @@ h2 {
 .Footer {
   text-align: center;
 }
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
 @media (max-width: 800px) {
   .App {
     border: 1px solid #000;
