@@ -73,7 +73,7 @@ export default function Weather(props) {
             <span>Wind: {weatherData.wind}km/h</span>
           </div>
         </div>
-        <WeatherForecast oordinates={weatherData.coordinates} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
