@@ -13,6 +13,7 @@ export default function Weather(props) {
     setWeatherData({
       dataReady: true,
       temperature: response.data.main.temp,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -72,7 +73,7 @@ export default function Weather(props) {
             <span>Wind: {weatherData.wind}km/h</span>
           </div>
         </div>
-        <WeatherForecast />
+        <WeatherForecast oordinates={weatherData.coordinates} />
       </div>
     );
   } else {
