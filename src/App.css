@@ -73,6 +73,10 @@ h2 {
 .WeatherForecast {
   text-align: center;
 }
+.WeatherForecast-temperatures,
+.WeatherForecast-day {
+  margin: 10px 0;
+}
 
 .WeatherForecast-temperature-min {
   opacity: 0.6;
